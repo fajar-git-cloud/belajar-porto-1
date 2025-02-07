@@ -1,0 +1,98 @@
+html {
+    font-family: "Epilogue";
+    font-weight: 400; /* Pastikan gaya ini tersedia */
+}
+
+nav .nav-logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .nav-link a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    justify-content: space-between;
+    padding: 24px 42px;
+    gap: auto;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    padding: 42px 24px;
+    gap: 42px 68px;
+}
+
+
+#hero .hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    border: 1px solid red;
+    width: 60%;
+}
+
+
+#hero .hero-right {
+    display: flex;
+    border: 1px solid red;
+    width: 50%;
+}
+
+#hero .hero-right img {
+    width: 100%;
+}
+
+#hero    .btn-hero{
+    background-color: #2D2D2D;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 24px 64px;
+    gap: 10px;
+}
+
+#hero .tagline-1{
+    font-size: 20px;
+    line-height: 30px;
+}
+#hero .tagline-2{
+    font-size: 68px;
+    line-height: 150px;
+    font-weight: 600;
+}
+
+#hero .description {
+    font-size: 17px;
+    line-height: 10px;
+    gap: 0px;
+}
+
+.logo-container {
+    display: flex; /* Membuat layout fleksibel */
+    justify-content: space-between; /* Spasi antar logo merata */
+    align-items: center; /* Rata tengah vertikal */
+    padding: 42px 68px; /* Tambahkan padding di sekitar kontainer */
+    background-color: white; /* Warna latar belakang */
+}
+
+.logo {
+    max-width: 100px; /* Batas lebar maksimal setiap logo */
+    height: auto; /* Menjaga rasio aspek */
+}
