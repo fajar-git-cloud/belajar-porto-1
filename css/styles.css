@@ -1,5 +1,9 @@
-html {
-    font-family: "Epilogue";
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue';
     font-weight: 400; /* Pastikan gaya ini tersedia */
 }
 
@@ -95,4 +99,16 @@ nav{
 .logo {
     max-width: 100px; /* Batas lebar maksimal setiap logo */
     height: auto; /* Menjaga rasio aspek */
+}
+
+.skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card   {
+    background: white;
+    border-radius: 10px;
 }
