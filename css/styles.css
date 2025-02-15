@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --black-color: #2D2D2D;
+    --white-color: #FFFFFF;
+    --green-color: #009379;
+    --red-color: #FF6250;
+    --pink-color: #F3AFA8;
+    --grey-color: #F3F3F3;
+    --yellow-color: #F7D684;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
 
 *{
     margin: 0;
@@ -7,24 +21,14 @@
     font-weight: 400; /* Pastikan gaya ini tersedia */
 }
 
-nav .nav-logo {
-    font-size: 20px;
-    font-weight: 600;
+.wrapper {
+    max-width: 1097px;
+    margin: 0 auto;
 }
 
-nav .nav-link {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav .nav-link a {
-    text-decoration: none;
-    font-size: 17px;
-    color: black;
+header {
+    height: 100vh;
+    width: 100%;
 }
 
 nav{
@@ -36,22 +40,58 @@ nav{
     gap: auto;
 }
 
-#hero{
+nav .nav-logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav .nav-link {
     display: flex;
     align-items: center;
-    padding: 42px 24px;
-    gap: 42px 68px;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .nav-link a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
 }
 
 
-#hero .hero-left {
+.hero-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.hero-left {
     display: flex;
     flex-direction: column;
     gap: 48px;
     border: 1px solid red;
     width: 60%;
 }
-
+.hero-left .tagline-1 {
+   font-family: "Epilogue";
+   font-size: 20px ;
+   line-height: 30px;
+   color: #2D2D2D;
+   font-weight: 600;
+}
+.hero-left .tagline-2 {
+   font-family: "Epilogue";
+   font-size: 68px ;
+   line-height: auto;
+   color: #2D2D2D;
+   font-weight: 600;
+}
 
 #hero .hero-right {
     display: flex;
@@ -63,13 +103,14 @@ nav{
     width: 100%;
 }
 
-#hero    .btn-hero{
+.btn-hero{
     background-color: #2D2D2D;
     color: white;
     border: 1px solid black;
     cursor: pointer;
     padding: 24px 64px;
     gap: 10px;
+    display: inline-block;
 }
 
 #hero .tagline-1{
